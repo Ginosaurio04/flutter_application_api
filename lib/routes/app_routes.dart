@@ -7,7 +7,8 @@ class AppRoutes {
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
     Map<String, Widget Function(BuildContext)> appRoutes = {};
     appRoutes.addAll({
-      '/home': (BuildContext context) => const HomeScreen(title: 'Home'),
+      '/home': (BuildContext context) =>
+          const HomeScreen(title: 'Rick and Morty Enciclopedia'),
     });
 
     return appRoutes;
