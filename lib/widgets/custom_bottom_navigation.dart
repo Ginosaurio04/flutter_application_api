@@ -22,7 +22,7 @@ class CustomBottomNavigation extends StatelessWidget {
       items: items,
       backgroundColor: Colors.black,
       currentIndex: validatedIndex,
-      selectedItemColor: const Color.fromARGB(255, 13, 207, 126),
+      selectedItemColor: const Color.fromARGB(255, 76, 175, 80),
       onTap: (index) {
         switch (index) {
           case 0:
