@@ -4,6 +4,7 @@ import '../services/api_service.dart';
 import '../models/character.dart';
 import '../widgets/music_button.dart';
 import 'details_screen.dart';
+import '../widgets/custom_bottom_navigation.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key, required this.title});
@@ -35,6 +36,9 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
       ),
+
+      bottomNavigationBar: const CustomBottomNavigation(currentIndex: 0),
+
       body: FutureBuilder<List<Character>>(
         future: futureCharacters,
         builder: (context, snapshot) {

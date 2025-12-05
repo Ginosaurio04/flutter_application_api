@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
-// Removed unused import to avoid circular/unused import issues
+import '../widgets/custom_bottom_navigation.dart';
 
-class ContactoScreen extends StatefulWidget {
-  const ContactoScreen({super.key, required this.title});
+class InfoScreen extends StatefulWidget {
+  const InfoScreen({super.key, required this.title});
 
   final String title;
 
   @override
-  State<ContactoScreen> createState() => _ContactoScreenState();
+  State<InfoScreen> createState() => _InfoScreenState();
 }
 
-class _ContactoScreenState extends State<ContactoScreen> {
+class _InfoScreenState extends State<InfoScreen> {
   Future<void> _launchURL(BuildContext context, String url) async {
     final uri = Uri.parse(url);
     try {
@@ -36,6 +36,7 @@ class _ContactoScreenState extends State<ContactoScreen> {
     return Scaffold(
       appBar: AppBar(title: Text(widget.title), backgroundColor: Colors.black),
 
+      bottomNavigationBar: const CustomBottomNavigation(currentIndex: 1),
       body: Column(
         children: [
           Expanded(
@@ -49,7 +50,7 @@ class _ContactoScreenState extends State<ContactoScreen> {
                     side: const BorderSide(color: Colors.redAccent),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.all(16.0),
+                    padding: const EdgeInsets.all(10.0),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: const [
@@ -62,7 +63,6 @@ class _ContactoScreenState extends State<ContactoScreen> {
                           ),
                         ),
                         SizedBox(height: 8),
-                        Text('Aquí puedes ver varias opciones de contacto.'),
                       ],
                     ),
                   ),
@@ -70,13 +70,23 @@ class _ContactoScreenState extends State<ContactoScreen> {
 
                 Card(
                   color: Colors.black,
-                  elevation: 4,
+                  elevation: 8,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
                     side: const BorderSide(color: Colors.redAccent),
                   ),
+
                   child: Column(
                     children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: CircleAvatar(
+                          radius: 50,
+                          backgroundImage: AssetImage(
+                            'flutter_application_api/assets/ff7 boxart - Bing.jpeg',
+                          ),
+                        ),
+                      ),
                       // GitHub
                       ListTile(
                         leading: const Icon(
@@ -97,64 +107,6 @@ class _ContactoScreenState extends State<ContactoScreen> {
                           context,
                           'https://github.com/Ginosaurio04',
                         ),
-                      ),
-                    ],
-                  ),
-                ),
-
-                Card(
-                  color: Colors.black,
-                  elevation: 4,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.redAccent),
-                  ),
-                  child: Column(
-                    children: <Widget>[
-                      // GitHub
-                      ListTile(
-                        leading: const Icon(
-                          Icons.alternate_email,
-                          color: Colors.redAccent,
-                        ),
-                        title: const Text(
-                          'Correo Institucional',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.redAccent,
-                          ),
-                        ),
-                        subtitle: const Text('gcova.1249@unimar.edu.ve'),
-                      ),
-                    ],
-                  ),
-                ),
-
-                Card(
-                  color: Colors.black,
-                  elevation: 8,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.redAccent),
-                  ),
-                  child: Column(
-                    children: <Widget>[
-                      // GitHub
-                      ListTile(
-                        leading: const Icon(
-                          Icons.phone,
-                          color: Colors.redAccent,
-                        ),
-                        title: const Text(
-                          'Telefono',
-                          style: TextStyle(
-                            fontSize: 16,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.redAccent,
-                          ),
-                        ),
-                        subtitle: const Text('0414*****52'),
                       ),
                     ],
                   ),
