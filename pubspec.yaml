@@ -12,6 +12,7 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.14.4
+  flutter_svg: ^1.1.6
   http: ^1.2.1
   just_audio: ^0.9.40
   provider: ^6.1.2
