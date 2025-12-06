@@ -112,7 +112,7 @@ class _InfoScreenState extends State<InfoScreen> {
                           radius: 50,
                           // RUTA CORREGIDA: Asumiendo que 'assets/' está declarado en pubspec.yaml
                           backgroundImage: const AssetImage(
-                            'flutter_application_api/assets/gumball.png',
+                            'flutter_application_api/assets/482075692_1375335030565501_152531711643344300_n.jpg',
                           ),
                         ),
                       ),
@@ -161,7 +161,7 @@ class _InfoScreenState extends State<InfoScreen> {
                           radius: 50,
                           // RUTA CORREGIDA: Asumiendo que 'assets/' está declarado en pubspec.yaml
                           backgroundImage: const AssetImage(
-                            'assets/gumball.png',
+                            'flutter_application_api/assets/gumball.png',
                           ),
                         ),
                       ),
