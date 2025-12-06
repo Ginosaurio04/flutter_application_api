@@ -12,7 +12,6 @@ dependencies:
   flutter:
     sdk: flutter
   flutter_launcher_icons: ^0.14.4
-  flutter_svg: ^1.1.6
   http: ^1.2.1
   just_audio: ^0.9.40
   provider: ^6.1.2
@@ -23,9 +22,16 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/images.png"
+  min_sdk_android: 21
+
 flutter:
   uses-material-design: true
   assets:
     - assets/audio/rick_morty_intro.mp3
-    - assets/
-  
+    - assets/logo.jpg
+    - assets/gumball.png
+    - assets/images.png
