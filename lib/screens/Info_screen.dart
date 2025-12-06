@@ -111,7 +111,7 @@ class _InfoScreenState extends State<InfoScreen> {
                         child: CircleAvatar(
                           radius: 50,
                           backgroundImage: const AssetImage(
-                            'flutter_application_api/assets/482075692_1375335030565501_152531711643344300_n.jpg',
+                            'assets/Imagen de WhatsApp 2025-10-27 a las 21.03.40_2b373c4c.jpg',
                           ),
                         ),
                       ),
@@ -160,7 +160,7 @@ class _InfoScreenState extends State<InfoScreen> {
                           radius: 50,
                           // RUTA CORREGIDA: Asumiendo que 'assets/' está declarado en pubspec.yaml
                           backgroundImage: const AssetImage(
-                            'flutter_application_api/assets/ff7 boxart - Bing.jpeg',
+                            'assets/ff7 boxart - Bing.jpeg',
                           ),
                         ),
                       ),
