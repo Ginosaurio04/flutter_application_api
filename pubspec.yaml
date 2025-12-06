@@ -27,4 +27,4 @@ flutter:
   assets:
     - assets/audio/rick_morty_intro.mp3
     - assets/
-    -flutter_application_api/assets/
+  
