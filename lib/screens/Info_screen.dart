@@ -47,7 +47,7 @@ class _InfoScreenState extends State<InfoScreen> {
                   elevation: 1,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.redAccent),
+                    side: const BorderSide(color: Colors.green),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(10.0),
@@ -59,7 +59,7 @@ class _InfoScreenState extends State<InfoScreen> {
                           style: TextStyle(
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
-                            color: Colors.redAccent,
+                            color: Colors.green,
                           ),
                         ),
                         SizedBox(height: 8),
@@ -73,7 +73,7 @@ class _InfoScreenState extends State<InfoScreen> {
                   elevation: 8,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.redAccent),
+                    side: const BorderSide(color: Colors.green),
                   ),
 
                   child: Column(
@@ -91,14 +91,14 @@ class _InfoScreenState extends State<InfoScreen> {
                       ListTile(
                         leading: const Icon(
                           Icons.alternate_email,
-                          color: Colors.redAccent,
+                          color: Colors.green,
                         ),
                         title: const Text(
                           'GitHub',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.redAccent,
+                            color: Colors.green,
                           ),
                         ),
                         subtitle: const Text('Ginosaurio04'),
@@ -117,29 +117,38 @@ class _InfoScreenState extends State<InfoScreen> {
                   elevation: 8,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(12),
-                    side: const BorderSide(color: Colors.redAccent),
+                    side: const BorderSide(color: Colors.green),
                   ),
                   child: Column(
                     children: <Widget>[
+                      Padding(
+                        padding: const EdgeInsets.all(10.0),
+                        child: CircleAvatar(
+                          radius: 50,
+                          backgroundImage: AssetImage(
+                            'flutter_application_api/assets/gumball.png',
+                          ),
+                        ),
+                      ),
                       // GitHub
                       ListTile(
                         leading: const Icon(
-                          Icons.camera_alt,
-                          color: Colors.redAccent,
+                          Icons.alternate_email,
+                          color: Colors.green,
                         ),
                         title: const Text(
-                          'Instagram',
+                          'GitHub',
                           style: TextStyle(
                             fontSize: 16,
                             fontWeight: FontWeight.bold,
-                            color: Colors.redAccent,
+                            color: Colors.green,
                           ),
                         ),
-                        subtitle: const Text('ginomargiotta04'),
+                        subtitle: const Text('Jhonnyferrer'),
                         trailing: const Icon(Icons.open_in_new),
                         onTap: () => _launchURL(
                           context,
-                          'https://www.instagram.com/ginomargiotta04/',
+                          'https://github.com/Jhonnyferrer',
                         ),
                       ),
                     ],
