@@ -35,6 +35,11 @@ class _HomeScreenState extends State<HomeScreen> {
             child: MusicButton(assetPath: 'assets/audio/rick_morty_intro.mp3'),
           ),
         ],
+        titleTextStyle: TextStyle(
+          color: Colors.green,
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
+        ),
       ),
 
       bottomNavigationBar: const CustomBottomNavigation(currentIndex: 0),

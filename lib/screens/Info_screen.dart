@@ -34,7 +34,15 @@ class _InfoScreenState extends State<InfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(widget.title), backgroundColor: Colors.black),
+      appBar: AppBar(
+        title: Text(widget.title),
+        backgroundColor: Colors.black,
+        titleTextStyle: TextStyle(
+          color: Colors.green,
+          fontWeight: FontWeight.bold,
+          fontSize: 20,
+        ),
+      ),
 
       bottomNavigationBar: const CustomBottomNavigation(currentIndex: 1),
       body: Column(
