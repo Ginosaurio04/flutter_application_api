@@ -63,6 +63,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   elevation: 4,
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(15),
+                    side: BorderSide(color: Colors.green[800]!, width: 1),
                   ),
                   child: InkWell(
                     onTap: () {
@@ -78,15 +79,21 @@ class _HomeScreenState extends State<HomeScreen> {
                     child: Column(
                       children: [
                         Expanded(
-                          child: CachedNetworkImage(
-                            imageUrl: character.image,
-                            fit: BoxFit.cover,
-                            placeholder: (context, url) => Container(
-                              color: Colors.grey[800],
-                              child: Icon(Icons.person, color: Colors.grey),
+                          child: ClipRRect(
+                            borderRadius: BorderRadius.only(
+                              topLeft: Radius.circular(15),
+                              topRight: Radius.circular(15),
                             ),
-                            errorWidget: (context, url, error) =>
-                                Icon(Icons.broken_image, color: Colors.grey),
+                            child: CachedNetworkImage(
+                              imageUrl: character.image,
+                              fit: BoxFit.cover,
+                              placeholder: (context, url) => Container(
+                                color: Colors.grey[800],
+                                child: Icon(Icons.person, color: Colors.grey),
+                              ),
+                              errorWidget: (context, url, error) =>
+                                  Icon(Icons.broken_image, color: Colors.grey),
+                            ),
                           ),
                         ),
                         Padding(

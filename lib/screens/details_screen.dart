@@ -27,7 +27,7 @@ class _DetailsScreenState extends State<DetailsScreen> {
       appBar: AppBar(
         title: Text('Personaje'),
         backgroundColor: Colors.black,
-        foregroundColor: Colors.white,
+        foregroundColor: Colors.green,
         centerTitle: true,
       ),
       body: FutureBuilder<Character>(
