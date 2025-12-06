@@ -111,7 +111,7 @@ class _InfoScreenState extends State<InfoScreen> {
                         child: CircleAvatar(
                           radius: 50,
                           backgroundImage: const AssetImage(
-                            'assets/Imagen de WhatsApp 2025-10-27 a las 21.03.40_2b373c4c.jpg',
+                            'assets/gumball.png',
                           ),
                         ),
                       ),
