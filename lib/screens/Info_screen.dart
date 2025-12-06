@@ -159,9 +159,7 @@ class _InfoScreenState extends State<InfoScreen> {
                         child: CircleAvatar(
                           radius: 50,
                           // RUTA CORREGIDA: Asumiendo que 'assets/' está declarado en pubspec.yaml
-                          backgroundImage: const AssetImage(
-                            'assets/ff7 boxart - Bing.jpeg',
-                          ),
+                          backgroundImage: const AssetImage('assets/logo.jpg'),
                         ),
                       ),
                       // GitHub
