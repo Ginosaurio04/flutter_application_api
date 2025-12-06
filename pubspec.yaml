@@ -11,6 +11,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter:
     sdk: flutter
+  flutter_launcher_icons: ^0.14.4
+    android: "launcher_icon"
+   ios: true
+   image_path: "flutter_application_api/assets/images.png"
   http: ^1.2.1
   just_audio: ^0.9.40
   provider: ^6.1.2
