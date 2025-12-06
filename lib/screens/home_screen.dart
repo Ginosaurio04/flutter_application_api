@@ -103,6 +103,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               Text(
                                 character.name,
                                 style: TextStyle(
+                                  color: const Color.fromARGB(255, 37, 202, 48),
                                   fontWeight: FontWeight.bold,
                                   fontSize: 16,
                                 ),
@@ -115,7 +116,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 '${character.species} - ${character.status}',
                                 style: TextStyle(
                                   fontSize: 12,
-                                  color: Colors.grey[400],
+                                  color: Colors.green[400],
                                 ),
                               ),
                             ],
